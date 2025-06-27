@@ -17,21 +17,21 @@
     </header>
 
     <section class="row justify-content-center">
-        <div class="col-md-6 col-lg-4 text-center">
+        <div class="col-md-6 col-lg-4 shadow p-4 rounded bg-light text-center">
             <h3>Контактная информация:</h3>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><strong>Телефон:</strong> +7 (920) 253-73-17</li>
-                <li class="list-group-item"><strong>Адрес клиники:</strong> Нижний Новгород ул. Октябрьской Революции, д.43 оф.316</li>
+                <li class="list-group-item"><strong>Адрес клиники:</strong> Нижний Новгород, ул. Октябрьской Революции, д.43, офис 316</li>
             </ul>
 
             <!-- Интерактивная карта -->
-            <div id="map" style="height: 400px; width: 100%;" class="my-3"></div>
+            <div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>
 
             <!-- Поле ввода адреса и кнопка прокладки маршрута -->
             <form action="#" method="GET" onsubmit="calculateRoute(); return false;" class="mt-3">
                 <label for="addressInput" class="visually-hidden">Введите ваш адрес</label>
-                <input type="text" id="addressInput" placeholder="Ваш адрес...">
-                <button type="submit" class="btn btn-primary w-100 mt-2">Прокладка маршрута</button>
+                <input type="text" id="addressInput" placeholder="Ваш адрес..." class="w-100 form-control">
+                <button type="submit" class="btn btn-success w-100 mt-2">Показать маршрут</button>
             </form>
         </div>
     </section>
