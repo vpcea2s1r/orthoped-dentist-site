@@ -2,6 +2,7 @@ body {
     background-color: #fafafa;
     color: #333;
     font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 .container {
@@ -38,17 +39,6 @@ h1, h2 {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.btn-primary {
-    background-color: #dc3545; /* Красный цвет для гармонии с акцентом */
-    border-color: #dc3545;
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: #bd2130;
-    border-color: #ae1e29;
-}
-
 #map {
     height: 400px;
     width: 100%;
@@ -57,45 +47,27 @@ h1, h2 {
     overflow: hidden;
 }
 
-.card-body {
-    padding: 1.5rem;
-}
-
-.shadow {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для глубины */
-}
-
-.text-center {
-    text-align: center;
-}
-
-.mb-4 {
-    margin-bottom: 1.5rem;
-}
-
-.display-4 {
-    font-weight: bold;
-    font-size: 2.5rem;
-}
-
-.lead {
-    font-size: 1.25rem;
-    font-weight: normal;
-}
-
-.section-header {
-    margin-bottom: 1.5rem;
-}
-
-.contact-info {
+.contact-card {
     background-color: #fafafa;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 768px) {
-    .contact-info {
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    section ul li {
+        padding: 0.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    section ul li {
         padding: 1rem;
     }
 }
