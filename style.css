@@ -5,10 +5,17 @@ body {
 }
 
 .hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: white;
+}
+
+/* Повысим контрастность текста, добавив границу */
+.hero-section h2, .hero-section p {
+    outline: 2px solid black;
+    outline-offset: -2px;
+    padding: 5px;
 }
 
 .contact-card {
