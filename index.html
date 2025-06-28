@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/css/materialize.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f5f5f5; /* Серый фон */
+            background-color: #f5f5f5; /* Светлый сероватый фон */
             font-family: 'Roboto', sans-serif;
             display: flex;
             justify-content: center;
@@ -39,12 +39,9 @@
                        0 8px 10px -5px rgba(0,0,0,0.2);
         }
 
-        a {
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        #yandex-map {
+            height: 300px; /* Высота карты */
+            width: 100%;
         }
     </style>
 </head>
@@ -61,6 +58,7 @@
         </div>
     </div>
 
+    <!-- Контакты -->
     <div class="row" id="contacts">
         <div class="col s12 m6 offset-m3 card z-depth-3">
             <div class="card-content grey-text text-darken-3">
@@ -72,7 +70,20 @@
             </div>
         </div>
     </div>
+
+    <!-- Карта проезда -->
+    <div class="row" id="map-section">
+        <div class="col s12 m6 offset-m3 card z-depth-3">
+            <div class="card-content grey-text text-darken-3">
+                <span class="card-title">Карта проезда</span>
+                <div id="yandex-map"></div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- Скрипт подключения Яндекс.Карт -->
+<script async defer src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac07c04ba-9e48-40a1-b8a4-ddaa1280a14a&width=100%25&height=300&lang=ru_RU&scroll=true"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/js/materialize.min.js"></script>
 </body>
