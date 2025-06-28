@@ -39,29 +39,16 @@
                        0 8px 10px -5px rgba(0,0,0,0.2);
         }
 
-        #yandex-map {
-            height: 300px; /* Высота карты */
-            width: 100%; /* Заполняет весь контейнер */
-            max-width: 600px; /* Ограничиваем максимальную ширину */
-            margin: auto; /* Центровка по ширине */
-        }
-
-        .row {
-            margin-left: auto !important;
-            margin-right: auto !important;
-            max-width: 1200px; /* Максимальная ширина сетки */
-        }
-
-        .container {
+        /* Настройка карты */
+        #yandex-map-container {
+            height: 300px; /* То же самое, что и высота карточки */
             width: 100%;
-            padding-left: 15px;
-            padding-right: 15px;
-            margin-left: auto;
-            margin-right: auto;
+            overflow: hidden;
         }
 
-        .card-content {
-            overflow: hidden; /* Обрезаем возможные выходящие элементы */
+        #yandex-map {
+            height: 100%;
+            width: 100%;
         }
     </style>
 </head>
@@ -93,10 +80,12 @@
 
     <!-- Карта проезда -->
     <div class="row" id="map-section">
-        <div class="col s12 l6 offset-l3 card z-depth-3">
+        <div class="col s12 m6 offset-m3 card z-depth-3">
             <div class="card-content grey-text text-darken-3">
                 <span class="card-title">Карта проезда</span>
-                <div id="yandex-map"></div>
+                <div id="yandex-map-container">
+                    <div id="yandex-map"></div>
+                </div>
             </div>
         </div>
     </div>
