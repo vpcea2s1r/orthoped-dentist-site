@@ -1,36 +1,38 @@
 body {
-    background-color: #f8f9fa;
-    color: #343a40;
+    background-color: #eeeeee;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-
-/* Повысим контрастность текста, добавив границу */
-.hero-section h2, .hero-section p {
-    outline: 2px solid black;
-    outline-offset: -2px;
-    padding: 5px;
-}
-
-.contact-card {
-    background-color: white;
+.card {
+    margin-top: 20px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    font-size: 14px;
+.collection-item {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-    .hero-section {
-        height: 400px;
-    }
+.card-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.z-depth-3 {
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),
+              0 6px 30px 5px rgba(0,0,0,0.12),
+              0 8px 10px -5px rgba(0,0,0,0.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
