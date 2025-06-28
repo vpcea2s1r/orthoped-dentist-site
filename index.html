@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/css/materialize.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f5f5f5; /* Светлый сероватый фон */
+            background-color: #FAFAFA; /* Очень светлый серый фон */
             font-family: 'Roboto', sans-serif;
             display: flex;
             justify-content: center;
@@ -18,25 +18,43 @@
             margin: 0;
         }
 
-        .card {
-            margin-top: 20px;
+        .tile {
+            background-color: #FFFFFF; /* Белый фон карточки */
             padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            text-align: center;
         }
 
-        .collection-item {
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        p {
             font-size: 16px;
             line-height: 1.5;
+            color: #666666;
         }
 
-        .card-title {
-            font-size: 24px;
-            font-weight: 500;
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        .z-depth-3 {
-            box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14),
-                       0 6px 30px 5px rgba(0,0,0,0.12),
-                       0 8px 10px -5px rgba(0,0,0,0.2);
+        li {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666666;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .tile {
+                width: calc(100% - 40px); /* Оставляем отступы по бокам */
+            }
         }
     </style>
 </head>
@@ -44,25 +62,21 @@
 
 <div class="container">
     <div class="row">
-        <div class="col s12 m6 offset-m3 card z-depth-3">
-            <div class="card-content grey-text text-darken-3">
-                <span class="card-title">Никитина Марина Георгиевна</span>
-                <p>Врач стоматолог-ортопед</p>
-                <p>Более 25 лет опыта работы</p>
-            </div>
+        <div class="col s12 tile">
+            <h1>Никитина Марина Георгиевна</h1>
+            <p>Врач стоматолог-ортопед</p>
+            <p>Более 25 лет опыта работы</p>
         </div>
     </div>
 
     <!-- Контакты -->
-    <div class="row" id="contacts">
-        <div class="col s12 m6 offset-m3 card z-depth-3">
-            <div class="card-content grey-text text-darken-3">
-                <span class="card-title">Контактная информация</span>
-                <ul class="collection">
-                    <li class="collection-item">Телефон: +7 (920) 253-73-17</li>
-                    <li class="collection-item">Адрес клиники: Нижний Новгород, ул. Октябрьской Революции, д.43, офис 316</li>
-                </ul>
-            </div>
+    <div class="row">
+        <div class="col s12 tile">
+            <h1>Контактная информация</h1>
+            <ul>
+                <li>Телефон: +7 (920) 253-73-17</li>
+                <li>Адрес клиники: Нижний Новгород, ул. Октябрьской Революции, д.43, офис 316</li>
+            </ul>
         </div>
     </div>
 </div>
