@@ -1,73 +1,29 @@
 body {
-    background-color: #fafafa;
-    color: #333;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: 'Roboto', sans-serif;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1, h2 {
-    color: #3c3c3c;
-}
-
-.list-group-item {
-    font-size: 1.1em;
-    background-color: #ffffff;
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
-.form-control {
-    display: block;
-    width: 100%;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-#map {
-    height: 400px;
-    width: 100%;
-    margin-top: 20px;
-    border-radius: 5px;
-    overflow: hidden;
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
 .contact-card {
-    background-color: #fafafa;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-    header h1 {
-        font-size: 24px;
-    }
-    section ul li {
-        padding: 0.5rem;
-    }
+footer {
+    font-size: 14px;
 }
 
-@media (min-width: 769px) {
-    section ul li {
-        padding: 1rem;
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px;
     }
 }
